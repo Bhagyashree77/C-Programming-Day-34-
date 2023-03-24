@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    struct student
+    {
+        char name[10];
+        int id,m1,m2,m3,tot;
+        float avg;
+    }s;
+    scanf("%d%s",&s.id,&s.name);
+    scanf("%d%d%d",&s.m1,&s.m2,&s.m3);
+    s.tot=s.m1+s.m2+s.m3;
+    s.avg=s.tot/3;
+    printf("Student details:\nID =%d\nName =%s\nTotal =%d\nAverage =%.2f\n",s.id,s.name,s.tot,s.avg);
+}
