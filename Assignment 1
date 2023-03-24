@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    struct book
+    {
+        char title[10];
+        char author[10];
+        int id;
+        float price;
+    }b;
+    scanf("%d%s",&b.id,&b.title);
+    scanf("%s%f",&b.author,&b.price);
+    printf("Book details:\nID =%d\nTitle =%s\nAuthor =%s\nPrice =%.2f\n",b.id,b.title,b.author,b.price);
+}
