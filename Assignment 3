@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    struct employee
+    {
+        char name[10];
+        char dob[10];
+        int id;
+        float salary;
+    }e;
+    scanf("%d%s",&e.id,&e.name);
+    scanf("%s%f",&e.dob,&e.salary);
+    printf("Empolyee details:\nID =%d\nName =%s\nDOB =%s\nSalary =%.2f\n",e.id,e.name,e.dob,e.salary);
+}
